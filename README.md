@@ -1,2 +1,6 @@
 # Classification-of-emails.-Naive-Bayes
-Using a training set of emails, this program determines using naive bayes classification how many of a testing set are spam and not spam
+Using a training set of emails, this program determines using naive bayes classification how many of a testing set are spam and ham (not spam).
+
+The program operates in two phases. First, in the training phase, your program reads in two different text files containing training examples for the two classes. These two files together are called the training set. Your program will examine the emails in the training set and, for each class, tabulate information about the number of training examples and how many times each word in the vocabulary appears in the examples for that class. (The "vocabulary" is the set of all words that appear in the training set emails.)
+
+Second, in the testing phase, your program will read in another two text files containing a new set of examples for each of the two classes. These two files together are called the testing set. Your program will run the classifier on each email in the testing set and classify it into one of the two classes by identifying the MAP hypothesis. Your code will report, for each email in the training set, the log-probability of the email belonging to each of the two classes, the predicted class, and whether or not the prediction was correct. At the end, your program will report the the number of examples in the testing set that were indeed classified correctly.
